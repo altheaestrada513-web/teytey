@@ -1,0 +1,171 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-weight: 600;
+
+    background: linear-gradient(135deg, #dff4ff, #ffe1ec);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 100vh;
+}
+
+.app {
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+}
+
+/* MAIN TITLE */
+h1 {
+    text-align: center;
+    margin-bottom: 25px;
+
+    color: #3f527d;
+    font-size: 32px;
+    font-weight: 800;
+}
+
+/* CONVERTER BOX */
+.converter {
+    background: #ffffff;
+
+    padding: 30px;
+
+    border-radius: 25px;
+
+    border: 3px solid #f2a9c4;
+
+    box-shadow: 0 8px 25px rgba(63, 82, 125, 0.2);
+}
+
+/* ALL LABELS */
+label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: #3d4f73;
+
+    font-size: 16px;
+    font-weight: 800;
+}
+
+/* INPUT AND SELECT */
+input,
+select {
+    width: 100%;
+
+    padding: 13px;
+
+    border: 2px solid #9ed4f2;
+
+    border-radius: 12px;
+
+    background: #f4fbff;
+
+    color: #293b5f;
+
+    font-size: 16px;
+    font-weight: 700;
+
+    outline: none;
+}
+
+/* CLICKED INPUT */
+input:focus,
+select:focus {
+    border-color: #ee91b2;
+
+    background: #fff5f9;
+}
+
+/* INPUT AREA */
+.input-group {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* FROM AND TO */
+.unit-row {
+    display: flex;
+
+    gap: 15px;
+
+    margin-bottom: 20px;
+}
+
+.unit-row > div {
+    flex: 1;
+}
+
+/* CONVERT BUTTON */
+button {
+    width: 100%;
+
+    padding: 14px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    background: #ee9fbc;
+
+    color: #ffffff;
+
+    font-size: 18px;
+    font-weight: 800;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+/* BUTTON HOVER */
+button:hover {
+    background: #df83a5;
+
+    transform: translateY(-2px);
+}
+
+/* RESULT BOX */
+.result {
+    margin-top: 25px;
+
+    text-align: center;
+
+    padding: 20px;
+
+    background: #e6f6ff;
+
+    border: 2px solid #9ed4f2;
+
+    border-radius: 15px;
+}
+
+/* RESULT LABEL */
+.result p {
+    color: #3d4f73;
+
+    font-size: 17px;
+
+    font-weight: 800;
+}
+
+/* RESULT NUMBER */
+.result h2 {
+    margin-top: 10px;
+
+    color: #df7299;
+
+    font-size: 30px;
+
+    font-weight: 900;
+}
