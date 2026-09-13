@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit Conversion App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="app">
+
+        <h1>Unit Conversion App</h1>
+
+        <!-- Conversion Type -->
+        <div class="converter">
+
+            <label>Conversion Type</label>
+
+            <select id="conversionType" onchange="changeUnits()">
+                <option value="length">Length</option>
+                <option value="mass">Mass</option>
+            </select>
+
+            <div class="input-group">
+                <label>Value</label>
+                <input type="number" id="value" placeholder="Enter value">
+            </div>
+
+            <div class="unit-row">
+
+                <div>
+                    <label>From</label>
+                    <select id="fromUnit"></select>
+                </div>
+
+                <div>
+                    <label>To</label>
+                    <select id="toUnit"></select>
+                </div>
+
+            </div>
+
+            <button onclick="convert()">Convert</button>
+
+            <div class="result">
+                <p>Result</p>
+                <h2 id="result">0</h2>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
